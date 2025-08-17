@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f2f4;
+}
+
+.main-box {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #ffffff;
+  align-items: center;
+  padding: 10px;
+}
+.child-box {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.child-box div {
+  margin: 10px 20px;
+  font-size: large;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  user-select: none;
+  caret-color: transparent;
+}
+
+.child-box div:hover {
+  color: #007bff;
+}
+
+.searchicon {
+  width: 21px;
+  height: 21px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.searchbox {
+  display: flex;
+  background-color: #f0f5ff;
+  padding: 5px;
+  border-radius: 5px;
+  align-items: center;
+}
+.searchbar input {
+  width: 500px;
+  padding: 5px;
+  border: none;
+  font-size: large;
+  background-color: #f0f5ff;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+.main-detail-box {
+  display: flex;
+  width: 80%;
+  background-color: #ffffff;
+  height: 100vh;
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+.main-detail-box div img {
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.main-detail-box div {
+  text-align: center;
+}
+
+.main-detail-box div p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+  text-transform: capitalize;
+}
+
+.category {
+  background-color: #eaecf0;
+  padding: 10px;
+  height: fit-content;
+  border-radius: 15px;
+}
+
+.category:hover {
+  background-color: #bd1b13;
+}
