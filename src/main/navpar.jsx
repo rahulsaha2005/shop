@@ -6,7 +6,7 @@ import colored from "../assets/colored.png";
 function Navbar({ items, search, focusimg }) {
   return (
     <>
-    {/* main box where  we are putting data for navbar */}
+      {/* main box where  we are putting data for navbar */}
       <div className="main-box">
         {/* input div which is directly link product entered by 
         the user so it can search products related to that word */}
@@ -21,7 +21,7 @@ function Navbar({ items, search, focusimg }) {
           {search}
         </div>
         {/* how we image and input combined , it is because we use padding for it */}
-        
+
         {/* div containing link to move that page */}
         <div className="child-box">
           {items.map((item, index) => (
@@ -31,6 +31,13 @@ function Navbar({ items, search, focusimg }) {
           ))}
         </div>
         {/* directly passed through function and used map to print evry that div */}
+        <div className="hamburger">
+          {items.map((item, index) => (
+            <div key={index} title={item}>
+              {item}
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );
