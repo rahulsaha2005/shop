@@ -31,7 +31,7 @@ body {
 }
 
 .child-box div:hover {
-  color: #007bff;
+  color: #bd1b13;
 }
 
 .searchicon {
@@ -109,6 +109,3 @@ textarea {
   caret-color: transparent;
 }
 
-.category:hover {
-  background-color: #bd1b13;
-}
