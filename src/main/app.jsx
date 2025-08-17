@@ -6,6 +6,7 @@ import grocery from "../assets/grocery.png";
 
 function App() {
   const [isfocused, setIsFocused] = useState(false);
+  const [selected, setSelected] = useState(false);
 
   return (
     <>
@@ -25,13 +26,29 @@ function App() {
         focusimg={isfocused}
       />
       <div className="main-detail-box">
-        <div className="category">
+        <div
+          className="category"
+          style={{
+            backgroundColor: selected ? "#eaecf0":"#bd1b13",
+            transform: selected ? "translateX(450px)" : "translateX(0)",
+            transition: "background-color 1s ease, transform 0.3s ease",
+          }}
+          onClick={() => setSelected(false)}
+        >
           <div>
             <img src={fmcg} alt="broken-fmcg" />
             <p>fmcg</p>
           </div>
         </div>
-        <div className="category">
+        <div
+          className="category"
+          style={{
+            backgroundColor: selected ? "#bd1b13" : "#eaecf0",
+            transform: selected ? "translateX(-450px)" : "translateX(0)",
+            transition: "background-color 1s ease, transform 0.3s ease",
+          }}
+          onClick={() => setSelected(true)}
+        >
           <div>
             <img src={grocery} alt="broken-grocery" />
             <p>grocery</p>
